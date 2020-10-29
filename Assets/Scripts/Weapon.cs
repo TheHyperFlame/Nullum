@@ -11,6 +11,7 @@ public class Weapon : MonoBehaviour
     public Transform shotDir;
     private float timeShot;
     public float startTime;
+    bool isFacingRight = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,14 +23,14 @@ public class Weapon : MonoBehaviour
     {
         ShootAuto();
         Rotate();
+        CursorFlip();
     }
 
     void Rotate()
     {
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float rotateZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, rotateZ + offset);
-        
+        transform.rotation = Quaternion.Euler(0f, transform.rotation.y, rotateZ + offset);
     }
    
     void ShootAuto()
@@ -47,5 +48,14 @@ public class Weapon : MonoBehaviour
             timeShot -= Time.deltaTime;
         }
     }
+    void CursorFlip()
+    {
+        if ((Input.mousePosition.x > Screen.width * 0.5f) != isFacingRight)
+        {
+            transform.localScale = new Vector3(-transform.localScale.x, -transform.localScale.y, transform.localScale.z);
+            isFacingRight = !isFacingRight;
+        }
+    }
+
 
 }

@@ -42,7 +42,7 @@ public class CharacterControllerScript : MonoBehaviour
     void Update()
     {
         Lunge();
-
+        CursorFlip();
         Jump();
     }
 
@@ -101,4 +101,9 @@ public class CharacterControllerScript : MonoBehaviour
     {
         lockLunge = false;
     }
+    void CursorFlip()
+    {
+        transform.localScale = new Vector3(Input.mousePosition.x > (Screen.width * 0.5f) ? 1 : -1, 1, 1);
+    }
+
 }
