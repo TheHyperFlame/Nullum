@@ -12,6 +12,9 @@ public class Weapon : MonoBehaviour
     private float timeShot;
     public float startTime;
     bool isFacingRight = true;
+    public float minX = 8.0f;
+    public float maxX = 10.0f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,7 @@ public class Weapon : MonoBehaviour
         ShootAuto();
         Rotate();
         CursorFlip();
+        Shutdown();
     }
 
     void Rotate()
@@ -39,7 +43,13 @@ public class Weapon : MonoBehaviour
         {
             if (Input.GetMouseButton(0))
             {
-                Instantiate(ammo, shotDir.position, transform.rotation);
+                GameObject bul = Instantiate(ammo, shotDir.position, shotDir.rotation);
+                bul.transform.Rotate(0, 0, UnityEngine.Random.Range(minX, maxX));
+                if ((minX >=0.0f) || (maxX <=18.0f))
+                    {
+                    minX -= 0.5f;
+                    maxX += 0.5f;
+                    }
                 timeShot = startTime;
             }
         }
@@ -54,6 +64,14 @@ public class Weapon : MonoBehaviour
         {
             transform.localScale = new Vector3(-transform.localScale.x, -transform.localScale.y, transform.localScale.z);
             isFacingRight = !isFacingRight;
+        }
+    }
+    void Shutdown()
+    {
+        if (Input.GetMouseButtonUp(0))
+        {
+            minX = 8.0f;
+            maxX = 10.0f;
         }
     }
 
