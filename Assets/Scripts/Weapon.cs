@@ -12,9 +12,10 @@ public class Weapon : MonoBehaviour
     private float timeShot;
     public float startTime;
     bool isFacingRight = true;
-    public float minX = 8.0f;
-    public float maxX = 10.0f;
-    
+    public float minX = 0.0f;
+    public float maxX = 0.0f;
+
+    public CharacterControllerScript ccs;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,8 +45,8 @@ public class Weapon : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 GameObject bul = Instantiate(ammo, shotDir.position, shotDir.rotation);
-                bul.transform.Rotate(0, 0, UnityEngine.Random.Range(minX, maxX));
-                if ((minX >=0.0f) || (maxX <=18.0f))
+                bul.transform.Rotate(0, 0, UnityEngine.Random.Range(minX * (Mathf.Abs(ccs.move) * 2 + 1), maxX * (Mathf.Abs(ccs.move) * 2 + 1)));
+                if ((minX >=-10.0f) || (maxX <=10.0f))
                     {
                     minX -= 0.5f;
                     maxX += 0.5f;
@@ -70,8 +71,8 @@ public class Weapon : MonoBehaviour
     {
         if (Input.GetMouseButtonUp(0))
         {
-            minX = 8.0f;
-            maxX = 10.0f;
+            minX = 0.0f;
+            maxX = 0.0f;
         }
     }
 

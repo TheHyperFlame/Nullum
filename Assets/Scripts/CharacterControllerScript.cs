@@ -11,7 +11,7 @@ public class CharacterControllerScript : MonoBehaviour
 
     bool isFacingRight = true;
     Animator anim;
-
+    public float move;
     bool isGrounded = false;
     public Transform groundCheck;
     float groundRadius = 0.2f;
@@ -48,7 +48,7 @@ public class CharacterControllerScript : MonoBehaviour
 
     public void Run()
     {
-        float move = Input.GetAxis("Horizontal");
+        move = Input.GetAxis("Horizontal");
         anim.SetFloat("Speed", Mathf.Abs(move));
 
 
