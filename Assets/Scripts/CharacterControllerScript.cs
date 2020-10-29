@@ -86,7 +86,7 @@ public class CharacterControllerScript : MonoBehaviour
     }
     void Jump()
     {
-        if ((jumpCount > 0) && Input.GetKeyDown(KeyCode.UpArrow))
+        if ((jumpCount > 0) && Input.GetKeyDown(KeyCode.W))
             {
                 anim.SetBool("Ground", false);
                 rigidBody.velocity = Vector2.up * jumpForce;
