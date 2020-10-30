@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class CharacterControllerScript : MonoBehaviour
 {
     Rigidbody2D rigidBody;
@@ -12,7 +10,7 @@ public class CharacterControllerScript : MonoBehaviour
     bool isFacingRight = true;
     Animator anim;
     public float move;
-    bool isGrounded = false;
+    public bool isGrounded = false;
     public Transform groundCheck;
     float groundRadius = 0.2f;
     public LayerMask whatIsGround;
@@ -35,7 +33,7 @@ public class CharacterControllerScript : MonoBehaviour
         anim.SetFloat("vSpeed", rigidBody.velocity.y);
         if (!isGrounded)
             return;
- 
+
 
     }
 
@@ -50,7 +48,6 @@ public class CharacterControllerScript : MonoBehaviour
     {
         move = Input.GetAxis("Horizontal");
         anim.SetFloat("Speed", Mathf.Abs(move));
-
 
         rigidBody.velocity = new Vector2(move * moveSpeed, rigidBody.velocity.y);
         if (move > 0 && !isFacingRight)
@@ -73,7 +70,7 @@ public class CharacterControllerScript : MonoBehaviour
     public int lungeImpulse = 1000;
     void Lunge()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl) && !lockLunge )
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !lockLunge)
         {
             lockLunge = true;
             Invoke("LungeLock", 2f);
@@ -87,11 +84,11 @@ public class CharacterControllerScript : MonoBehaviour
     void Jump()
     {
         if ((jumpCount > 0) && Input.GetKeyDown(KeyCode.W))
-            {
-                anim.SetBool("Ground", false);
-                rigidBody.velocity = Vector2.up * jumpForce;
-                jumpCount--;
-            }
+        {
+            anim.SetBool("Ground", false);
+            rigidBody.velocity = Vector2.up * jumpForce;
+            jumpCount--;
+        }
         if (isGrounded == true)
             jumpCount = 1;
     }
