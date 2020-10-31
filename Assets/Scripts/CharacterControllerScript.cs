@@ -17,6 +17,7 @@ public class CharacterControllerScript : MonoBehaviour
     public float checkRadius;
     public int jumpCount;
     public float jumpForce = 300;
+    public int health = 100;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -39,6 +40,7 @@ public class CharacterControllerScript : MonoBehaviour
 
     void Update()
     {
+        
         Lunge();
         CursorFlip();
         Jump();

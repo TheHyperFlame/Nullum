@@ -84,6 +84,7 @@ public class Weapon : MonoBehaviour
                 {
                     overHeat = true;
                     heatCount.text = "OVERHEAT!!!";
+                    ccs.health -= 30;
                     timeShot = 1;
                 }
                 OverHeat_Panel.GetComponent<Image>().fillAmount = heatRate/100;

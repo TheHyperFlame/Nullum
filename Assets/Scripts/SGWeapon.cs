@@ -18,8 +18,8 @@ public class SGWeapon : MonoBehaviour
     public float maxX = 30f;
     public float jumpDer = 0.0f;
     public float heatRate;
-    public int currentAmmo = 4;
-    public int magAmmo = 4;
+    public int currentAmmo = 1;
+    public int magAmmo = 1;
     public int totalAmmo = 12;
     public float reloadDelay = 4f;
     public bool currentReloading = false;
@@ -219,7 +219,8 @@ public class SGWeapon : MonoBehaviour
             overHeat = true;
             heatCount.text = "OVERHEAT!!!";
             timeShot = 2;
-        }
+            ccs.health -= 30;
+}
         OverHeat_Panel.GetComponent<Image>().fillAmount = heatRate / 100;
     }
 
