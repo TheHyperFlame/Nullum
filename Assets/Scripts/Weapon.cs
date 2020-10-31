@@ -24,6 +24,7 @@ public class Weapon : MonoBehaviour
     public float reloadDelay = 3f;
     public bool currentReloading = false;
     public bool overHeat = false;
+    public bool needToCorrectAim = false;
 
     [SerializeField]
     private Text ammoCount;
@@ -32,6 +33,7 @@ public class Weapon : MonoBehaviour
 
     public CharacterControllerScript ccs;
     public GameObject OverHeat_Panel;
+    public AimingCircle aim;
 
     void Start()
     {
@@ -73,6 +75,11 @@ public class Weapon : MonoBehaviour
                 {
                     minX -= 0.5f;
                     maxX += 0.5f;
+                    
+                }
+                if (aim.radius <= 4)
+                {
+                    aim.radius += 0.1f;
                 }
                 timeShot = startTime;
                 currentAmmo--;
@@ -107,10 +114,14 @@ public class Weapon : MonoBehaviour
     }
     void Shutdown()
     {
-        if (Input.GetMouseButtonUp(0))
+        if (!Input.GetMouseButton(0))
         {
             minX = -8.0f;
             maxX = 8.0f;
+            if (aim.radius > 1 * (jumpDer+1))
+            {
+                aim.radius -= 0.01f;
+            }
 
         }
     }
@@ -119,13 +130,20 @@ public class Weapon : MonoBehaviour
         if ((ccs.isGrounded == false) && (jumpDer < 1))
         {
             jumpDer += 1.0f;
+            aim.radius *= (jumpDer+1);
+            needToCorrectAim = true;
         }
     }
     void GroundedCheck()
     {
-        if ((ccs.isGrounded == true))
+        if ((ccs.isGrounded == true) && (needToCorrectAim == true))
         {
             jumpDer = 0.0f;
+            while (aim.radius > 1)
+            {
+                aim.radius -= 0.01f;
+            }
+            needToCorrectAim = false;
         }
     }
 
@@ -202,15 +220,23 @@ public class Weapon : MonoBehaviour
         {
             minX = -1.0f;
             maxX = 1.0f;
+            if (aim.radius > 0.5f)
+            {
+                aim.radius *= 0.99f;
+            }
             ccs.moveSpeed = 3.0f;
         }
     }
     void AimingShutdown()
     {
-        if (Input.GetMouseButtonUp(1))
+        if (!Input.GetMouseButton(1) || (ccs.isGrounded == false))
         {
             minX = -8.0f;
             maxX = 8.0f;
+            if (aim.radius < 1f)
+            {
+                aim.radius = 1f;
+            }
             ccs.moveSpeed = 10.0f;
 
         }

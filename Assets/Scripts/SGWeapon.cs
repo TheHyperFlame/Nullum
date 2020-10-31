@@ -33,6 +33,7 @@ public class SGWeapon : MonoBehaviour
 
     public CharacterControllerScript ccs;
     public GameObject OverHeat_Panel;
+    public AimingCircle aim;
 
     void Start()
     {
@@ -204,7 +205,7 @@ public class SGWeapon : MonoBehaviour
     }
     void AimingShutdown()
     {
-        if (Input.GetMouseButtonUp(1))
+        if (Input.GetMouseButtonUp(1) || (ccs.isGrounded == false))
         {
             minX = -30f;
             maxX = 30.0f;
