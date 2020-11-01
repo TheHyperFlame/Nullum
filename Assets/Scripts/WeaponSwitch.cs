@@ -6,6 +6,10 @@ using UnityEngine;
 public class WeaponSwitch : MonoBehaviour
 {
     public int weaponSwitch = 0;
+
+    public Weapon wep;
+    public SGWeapon sgwep;
+    public CharacterControllerScript ccs;
     // Start is called before the first frame update
     void Start()
     {

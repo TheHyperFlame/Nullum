@@ -14,8 +14,6 @@ public class Weapon : MonoBehaviour
     private float timeShot;
     public float startTime;
     bool isFacingRight = true;
-    public float minX = -4.0f;
-    public float maxX = 4.0f;
     public float jumpDer = 0.0f;
     public float heatRate;
     public int currentAmmo = 30;
@@ -70,13 +68,8 @@ public class Weapon : MonoBehaviour
             if (Input.GetMouseButton(0) && (currentAmmo > 0) && (currentReloading == false))
             {
                 GameObject bul = Instantiate(ammo, shotDir.position, shotDir.rotation);
-                bul.transform.Rotate(0, 0, UnityEngine.Random.Range(minX * ((Mathf.Abs(ccs.move) + jumpDer) * 2 + 1), maxX * (Mathf.Abs(ccs.move) + jumpDer) * 2 + 1));
-                if ((minX >= -10.0f) || (maxX <= 10.0f))
-                {
-                    minX -= 0.5f;
-                    maxX += 0.5f;
-                    
-                }
+                bul.transform.Rotate(0, 0, UnityEngine.Random.Range(-aim.radius * 3 , aim.radius * 3 ));
+
                 if (aim.radius <= 4)
                 {
                     aim.radius += 0.1f;
@@ -114,11 +107,9 @@ public class Weapon : MonoBehaviour
     }
     void Shutdown()
     {
-        if (!Input.GetMouseButton(0))
+        if ((!Input.GetMouseButton(0) || (overHeat == true) || (currentReloading == true)) && (ccs.isGrounded == true) && (ccs.move == 0))
         {
-            minX = -8.0f;
-            maxX = 8.0f;
-            if (aim.radius > 1 * (jumpDer+1))
+            if ((aim.radius > 1 * (jumpDer+1)))
             {
                 aim.radius -= 0.01f;
             }
@@ -127,11 +118,12 @@ public class Weapon : MonoBehaviour
     }
     void JumpCheck()
     {
-        if ((ccs.isGrounded == false) && (jumpDer < 1))
+        if ((ccs.isGrounded == false) && (jumpDer < 1) && (aim.radius < 6))
         {
             jumpDer += 1.0f;
             aim.radius *= (jumpDer+1);
             needToCorrectAim = true;
+            
         }
     }
     void GroundedCheck()
@@ -218,8 +210,6 @@ public class Weapon : MonoBehaviour
     {
         if (Input.GetMouseButton(1) && (ccs.isGrounded == true))
         {
-            minX = -1.0f;
-            maxX = 1.0f;
             if (aim.radius > 0.5f)
             {
                 aim.radius *= 0.99f;
@@ -231,11 +221,9 @@ public class Weapon : MonoBehaviour
     {
         if (!Input.GetMouseButton(1) || (ccs.isGrounded == false))
         {
-            minX = -8.0f;
-            maxX = 8.0f;
-            if (aim.radius < 1f)
+            if (aim.radius < jumpDer+1)
             {
-                aim.radius = 1f;
+                aim.radius = jumpDer+1;
             }
             ccs.moveSpeed = 10.0f;
 

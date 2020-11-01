@@ -704,8 +704,6 @@ MonoBehaviour:
   ammo: {fileID: 9089756007504464284, guid: f8edcfaf02ce03d4daef95f987aae09c, type: 3}
   shotDir: {fileID: 2127569143}
   startTime: 2
-  minX: -30
-  maxX: 30
   jumpDer: 0
   heatRate: 0
   currentAmmo: 1
@@ -715,11 +713,12 @@ MonoBehaviour:
   currentReloading: 0
   overHeat: 0
   heatDelay: 0
+  needToCorrectAim: 0
   ammoCount: {fileID: 1948333914}
   heatCount: {fileID: 2117857818}
   ccs: {fileID: 1784671268}
   OverHeat_Panel: {fileID: 1801720846}
-  aim: {fileID: 0}
+  aim: {fileID: 25213246}
 --- !u!212 &511494544
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -916,6 +915,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponSwitch: 0
+  wep: {fileID: 1852109339}
+  sgwep: {fileID: 511494543}
+  ccs: {fileID: 1784671268}
 --- !u!1 &733368129
 GameObject:
   m_ObjectHideFlags: 0
@@ -2170,6 +2172,7 @@ MonoBehaviour:
   jumpCount: 0
   jumpForce: 7
   health: 100
+  aim: {fileID: 25213246}
   lungeImpulse: 5000
 --- !u!1 &1801720846
 GameObject:
@@ -2344,8 +2347,6 @@ MonoBehaviour:
   ammo: {fileID: 9089756007504464284, guid: f8edcfaf02ce03d4daef95f987aae09c, type: 3}
   shotDir: {fileID: 394261387}
   startTime: 0.02
-  minX: 0
-  maxX: 0
   jumpDer: 0
   heatRate: 0
   currentAmmo: 30
@@ -7317,8 +7318,6 @@ MonoBehaviour:
   ammo: {fileID: 9089756007504464284, guid: f8edcfaf02ce03d4daef95f987aae09c, type: 3}
   shotDir: {fileID: 1104285079}
   startTime: 0.02
-  minX: 0
-  maxX: 0
   jumpDer: 0
   heatRate: 0
   currentAmmo: 30

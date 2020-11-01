@@ -14,8 +14,6 @@ public class SGWeapon : MonoBehaviour
     private float timeShot;
     public float startTime;
     bool isFacingRight = true;
-    public float minX = -30f;
-    public float maxX = 30f;
     public float jumpDer = 0.0f;
     public float heatRate;
     public int currentAmmo = 1;
@@ -25,6 +23,7 @@ public class SGWeapon : MonoBehaviour
     public bool currentReloading = false;
     public bool overHeat = false;
     public float heatDelay;
+    public bool needToCorrectAim = false;
 
     [SerializeField]
     private Text ammoCount;
@@ -73,12 +72,18 @@ public class SGWeapon : MonoBehaviour
                 GameObject bul2 = Instantiate(ammo, shotDir.position, shotDir.rotation);
                 GameObject bul3 = Instantiate(ammo, shotDir.position, shotDir.rotation);
                 GameObject bul4 = Instantiate(ammo, shotDir.position, shotDir.rotation);
-                bul1.transform.Rotate(0, 0, UnityEngine.Random.Range(minX, maxX));
-                bul2.transform.Rotate(0, 0, UnityEngine.Random.Range(minX, maxX));
-                bul3.transform.Rotate(0, 0, UnityEngine.Random.Range(minX, maxX));
-                bul4.transform.Rotate(0, 0, UnityEngine.Random.Range(minX, maxX));
+                GameObject bul5 = Instantiate(ammo, shotDir.position, shotDir.rotation);
+                bul1.transform.Rotate(0f, 0f, UnityEngine.Random.Range(-aim.radius * 2.5f, aim.radius * 2.5f));
+                bul2.transform.Rotate(0f, 0f, UnityEngine.Random.Range(-aim.radius * 2.5f, aim.radius * 2.5f));
+                bul3.transform.Rotate(0f, 0f, UnityEngine.Random.Range(-aim.radius * 2.5f, aim.radius * 2.5f));
+                bul4.transform.Rotate(0f, 0f, UnityEngine.Random.Range(-aim.radius * 2.5f, aim.radius * 2.5f));
+                bul5.transform.Rotate(0f, 0f, UnityEngine.Random.Range(-aim.radius * 2.5f, aim.radius * 2.5f));
                 timeShot = startTime;
                 currentAmmo--;
+                if (aim.radius <= 8)
+                {
+                    aim.radius += 2f;
+                }
                 if (heatRate < 100)
                 {
                     heatRate += 60.0f;
@@ -105,27 +110,35 @@ public class SGWeapon : MonoBehaviour
     }
     void Shutdown()
     {
-        if (Input.GetMouseButtonUp(0))
+        if ((!Input.GetMouseButton(0) || (overHeat == true) || (currentReloading == true) || (timeShot > 0)) && (ccs.isGrounded == true) && (ccs.move == 0))
         {
-            minX = -30.0f;
-            maxX = 30.0f;
-
+            if ((aim.radius > 3 * (jumpDer + 1)))
+            {
+                aim.radius -= 0.01f;
+            }
         }
     }
     void JumpCheck()
     {
-        if ((ccs.isGrounded == false) && (jumpDer < 1))
-        {
-            jumpDer += 1.0f;
+            if ((ccs.isGrounded == false) && (jumpDer < 1))
+            {
+                jumpDer += 1.0f;
+                aim.radius *= (jumpDer + 1);
+                needToCorrectAim = true;
+            }
         }
-    }
     void GroundedCheck()
     {
-        if ((ccs.isGrounded == true))
-        {
-            jumpDer = 0.0f;
+            if ((ccs.isGrounded == true) && (needToCorrectAim == true))
+            {
+                jumpDer = 0.0f;
+                while (aim.radius > 3)
+                {
+                    aim.radius -= 0.01f;
+                }
+                needToCorrectAim = false;
+            }
         }
-    }
 
     void CountAmmo()
     {
@@ -180,11 +193,11 @@ public class SGWeapon : MonoBehaviour
     }
     void heatDrop()
     {
-        if ((heatRate > 0) && (timeShot <= 0))
+        if ((heatRate > 0))
         {
             overHeat = false;
             heatCount.text = "";
-            heatRate -= 0.4f;
+            heatRate -= 0.2f;
             OverHeat_Panel.GetComponent<Image>().fillAmount = heatRate / 100;
         }
 
@@ -196,23 +209,27 @@ public class SGWeapon : MonoBehaviour
 
     void Aiming()
     {
-        if (Input.GetMouseButton(1) && (ccs.isGrounded == true))
-        {
-            minX = -15f;
-            maxX = 15f;
-            ccs.moveSpeed = 2.0f;
+            if (Input.GetMouseButton(1) && (ccs.isGrounded == true))
+            {
+                if (aim.radius > 1.5f)
+                {
+                    aim.radius *= 0.9f;
+                }
+                ccs.moveSpeed = 3.0f;
+            }
         }
-    }
     void AimingShutdown()
     {
-        if (Input.GetMouseButtonUp(1) || (ccs.isGrounded == false))
-        {
-            minX = -30f;
-            maxX = 30.0f;
-            ccs.moveSpeed = 10.0f;
+            if (!Input.GetMouseButton(1) || (ccs.isGrounded == false))
+            {
+                if (aim.radius < jumpDer + 3)
+                {
+                    aim.radius = jumpDer + 3;
+                }
+                ccs.moveSpeed = 10.0f;
 
+            }
         }
-    }
     void heatBuild()
     {
         if(heatRate > 100)
