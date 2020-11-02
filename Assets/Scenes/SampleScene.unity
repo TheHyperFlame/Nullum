@@ -1791,6 +1791,7 @@ MonoBehaviour:
   RoomPrefabs:
   - {fileID: 2811930307683400931, guid: 6cb6a486d3ce7ca4bac3b19591da0c66, type: 3}
   - {fileID: 2811930307683400931, guid: 6cb6a486d3ce7ca4bac3b19591da0c66, type: 3}
+  - {fileID: 4309241611152805252, guid: b1d98988016136c47b9b993f263bd134, type: 3}
   StartingRoom: {fileID: 2811930307683400931, guid: 6cb6a486d3ce7ca4bac3b19591da0c66,
     type: 3}
 --- !u!1 &1104285078
