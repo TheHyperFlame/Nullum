@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 83
+  controlID: 146
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -364,19 +364,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\Programm\Unity game\Nullum
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 30440000
-    m_LastClickedID: 17456
+    m_SelectedIDs: 34440000
+    m_LastClickedID: 17460
     m_ExpandedIDs: 0000000024440000264400002844000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -530,7 +530,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5afbffff
+      m_ExpandedIDs: 5afbffff463900005a39000066390000723900007a39000084390000923900009a390000b0390000c2390000de390000f2390000083a0000103a0000283a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -590,9 +590,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 28.990852, y: 41.218555, z: -108.890625}
+    m_Target: {x: -29.16893, y: 1.8751998, z: -108.890625}
     speed: 2
-    m_Value: {x: -28.886923, y: -7.884001, z: -3.734375}
+    m_Value: {x: -29.16893, y: 1.8751998, z: -108.890625}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -644,7 +644,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 75.4081
     speed: 2
-    m_Value: 8.485872
+    m_Value: 75.4081
   m_Ortho:
     m_Target: 1
     speed: 2

@@ -13,10 +13,10 @@ public class RoomsPlacer : MonoBehaviour
 
     private void Start()
     {
-        spawnedRooms = new Room[21, 21];
-        spawnedRooms[10, 10] = StartingRoom;
+        spawnedRooms = new Room[11, 11];
+        spawnedRooms[5, 5] = StartingRoom;
 
-        for(int i = 0; i < 22; i++)
+        for(int i = 0; i < 12; i++)
         {
             PlaceOneRoom();
         }
