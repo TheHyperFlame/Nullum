@@ -49,7 +49,7 @@ public class RoomsPlacer : MonoBehaviour
 
             if(ConnectToSomething(newRoom, position))
             {
-                newRoom.transform.position = new Vector3(position.x - 5, position.y - 5, 0) * 12;
+                newRoom.transform.position = new Vector3(position.x - 5, position.y - 5, 0) * 11;
                 spawnedRooms[position.x, position.y] = newRoom;
                 break;
             }

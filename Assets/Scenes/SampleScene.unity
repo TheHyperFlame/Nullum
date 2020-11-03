@@ -1789,11 +1789,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RoomPrefabs:
-  - {fileID: 5560350032606704679, guid: 33d0c5a4105795248aade853ed28f758, type: 3}
   - {fileID: 2561912094724663705, guid: 873123841eac98b4fa5162ae3893f0a1, type: 3}
   - {fileID: 6897079128067060014, guid: 3e5bb73de86170742a181da751f853cf, type: 3}
   - {fileID: 6977155310953912249, guid: b487e62edd9348c459b867f477132bc2, type: 3}
   - {fileID: 6777959219379415541, guid: 8d68bb7e91360f042b84e697a4514e92, type: 3}
+  - {fileID: 1444748782291721741, guid: 817e04ebf8e41f042b1af83ca6a1d6da, type: 3}
   StartingRoom: {fileID: 5560350032606704679, guid: 33d0c5a4105795248aade853ed28f758,
     type: 3}
 --- !u!1 &1104285078
