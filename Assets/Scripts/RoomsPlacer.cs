@@ -13,10 +13,10 @@ public class RoomsPlacer : MonoBehaviour
 
     private void Start()
     {
-        spawnedRooms = new Room[11, 11];
+        spawnedRooms = new Room[20, 20];
         spawnedRooms[5, 5] = StartingRoom;
 
-        for(int i = 0; i < 12; i++)
+        for(int i = 0; i < 21; i++)
         {
             PlaceOneRoom();
         }
@@ -49,7 +49,7 @@ public class RoomsPlacer : MonoBehaviour
 
             if(ConnectToSomething(newRoom, position))
             {
-                newRoom.transform.position = new Vector3(position.x - 5, position.y - 5, 0) * 11;
+                newRoom.transform.position = new Vector3(position.x - 5, position.y - 5, 0) * 26;
                 spawnedRooms[position.x, position.y] = newRoom;
                 break;
             }
