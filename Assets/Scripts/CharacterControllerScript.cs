@@ -18,6 +18,7 @@ public class CharacterControllerScript : MonoBehaviour
     public int jumpCount;
     public float jumpForce = 300;
     public int health = 100;
+    public AimingCircle aim;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -50,12 +51,15 @@ public class CharacterControllerScript : MonoBehaviour
     {
         move = Input.GetAxis("Horizontal");
         anim.SetFloat("Speed", Mathf.Abs(move));
-
         rigidBody.velocity = new Vector2(move * moveSpeed, rigidBody.velocity.y);
         if (move > 0 && !isFacingRight)
+        {
             Flip();
+        }
         else if (move < 0 && isFacingRight)
+        {
             Flip();
+        }
     }
 
     void Flip()
