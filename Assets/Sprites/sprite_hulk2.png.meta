@@ -1,0 +1,818 @@
+fileFormatVersion: 2
+guid: af7ed01a7cf7fa54ab7d19c2860975b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5249307567112112055
+    second: sprite_hulk2_0
+  - first:
+      213: -8059175489363816538
+    second: sprite_hulk2_1
+  - first:
+      213: -6942863369435884290
+    second: sprite_hulk2_2
+  - first:
+      213: 6671089527215251561
+    second: sprite_hulk2_3
+  - first:
+      213: 7859929276396665404
+    second: sprite_hulk2_4
+  - first:
+      213: -7912474319457724300
+    second: sprite_hulk2_5
+  - first:
+      213: -8862997701714044052
+    second: sprite_hulk2_6
+  - first:
+      213: -6371180077845864136
+    second: sprite_hulk2_7
+  - first:
+      213: 7775506197926556143
+    second: sprite_hulk2_8
+  - first:
+      213: 2063564375551205900
+    second: sprite_hulk2_9
+  - first:
+      213: -2892960196892308213
+    second: sprite_hulk2_10
+  - first:
+      213: 3853275934983896803
+    second: sprite_hulk2_11
+  - first:
+      213: 8852470849238181369
+    second: sprite_hulk2_12
+  - first:
+      213: 4535930913300614756
+    second: sprite_hulk2_13
+  - first:
+      213: 8801024238415499660
+    second: sprite_hulk2_14
+  - first:
+      213: 2501736565634949806
+    second: sprite_hulk2_15
+  - first:
+      213: 8787649538881504085
+    second: sprite_hulk2_16
+  - first:
+      213: 2321850538131164945
+    second: sprite_hulk2_17
+  - first:
+      213: 7373163583362709585
+    second: sprite_hulk2_18
+  - first:
+      213: -3693724905842276098
+    second: sprite_hulk2_19
+  - first:
+      213: -6823874257209770046
+    second: sprite_hulk2_20
+  - first:
+      213: 5433045382993490322
+    second: sprite_hulk2_21
+  - first:
+      213: -4671152137301298578
+    second: sprite_hulk2_22
+  - first:
+      213: 4500819800621819691
+    second: sprite_hulk2_23
+  - first:
+      213: -4408399737647047789
+    second: sprite_hulk2_24
+  - first:
+      213: 7176769085956442667
+    second: sprite_hulk2_25
+  - first:
+      213: 1534580535121439729
+    second: sprite_hulk2_0
+  - first:
+      213: -6546395459279938105
+    second: sprite_hulk2_1
+  - first:
+      213: 8325658754738242173
+    second: sprite_hulk2_2
+  - first:
+      213: 8304840647860406770
+    second: sprite_hulk2_3
+  - first:
+      213: -5601075088709054088
+    second: sprite_hulk2_4
+  - first:
+      213: -351836123589720698
+    second: sprite_hulk2_5
+  - first:
+      213: 7730872701199504964
+    second: sprite_hulk2_6
+  - first:
+      213: -8950555145065161947
+    second: sprite_hulk2_7
+  - first:
+      213: -971927048032743296
+    second: sprite_hulk2_8
+  - first:
+      213: 5416716057928686343
+    second: sprite_hulk2_9
+  - first:
+      213: 2193385300406543759
+    second: sprite_hulk2_10
+  - first:
+      213: 7018431837427872911
+    second: sprite_hulk2_11
+  - first:
+      213: -4614271102151990963
+    second: sprite_hulk2_12
+  - first:
+      213: 694223956356850767
+    second: sprite_hulk2_13
+  - first:
+      213: 3311521175111028910
+    second: sprite_hulk2_14
+  - first:
+      213: 257181301732470363
+    second: sprite_hulk2_15
+  - first:
+      213: -7649217951082132449
+    second: sprite_hulk2_16
+  - first:
+      213: 120472891478782834
+    second: sprite_hulk2_17
+  - first:
+      213: 4656534865835703067
+    second: sprite_hulk2_18
+  - first:
+      213: 1293182857261070486
+    second: sprite_hulk2_19
+  - first:
+      213: 1135007087719524742
+    second: sprite_hulk2_20
+  - first:
+      213: 8383146659459125678
+    second: sprite_hulk2_21
+  - first:
+      213: 6560074731914883187
+    second: sprite_hulk2_22
+  - first:
+      213: -1304282816403340851
+    second: sprite_hulk2_23
+  - first:
+      213: 2311543131852503997
+    second: sprite_hulk2_24
+  - first:
+      213: 3244805401596139196
+    second: sprite_hulk2_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite_hulk2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 337.3333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb642bbddceb4510800000000000000
+      internalID: 1534580535121439729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 337.3333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd936a93088625a0800000000000000
+      internalID: -6546395459279938105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_2
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 337.3333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d724b45b68eaa8370800000000000000
+      internalID: 8325658754738242173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_3
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 337.3333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9c1fb7198b04370800000000000000
+      internalID: 8304840647860406770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_4
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 337.3333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8711531f1ebf442b0800000000000000
+      internalID: -5601075088709054088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_5
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 337.3333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685c842e8e60e1bf0800000000000000
+      internalID: -351836123589720698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_6
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 337.3333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446d2c603c3994b60800000000000000
+      internalID: 7730872701199504964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_7
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 337.3333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b98d3848d39c380800000000000000
+      internalID: -8950555145065161947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 169.33333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0801a62df750382f0800000000000000
+      internalID: -971927048032743296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_9
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 169.33333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b5ef14e8a0c2b40800000000000000
+      internalID: 5416716057928686343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_10
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 169.33333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85ab464f48707e10800000000000000
+      internalID: 2193385300406543759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_11
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 169.33333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f843e26229a766160800000000000000
+      internalID: 7018431837427872911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_12
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 169.33333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4161ea41e0d6ffb0800000000000000
+      internalID: -4614271102151990963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_13
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 169.33333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f446739920162a900800000000000000
+      internalID: 694223956356850767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_14
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 169.33333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea05daca6f2e4fd20800000000000000
+      internalID: 3311521175111028910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_15
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 169.33333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ee2a40801b19300800000000000000
+      internalID: 257181301732470363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_16
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 169.33333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c45300dc488d590800000000000000
+      internalID: -7649217951082132449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_17
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 169.33333
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27338add4710ca100800000000000000
+      internalID: 120472891478782834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.3333282
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1bbb520ac55f9040800000000000000
+      internalID: 4656534865835703067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_19
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1.3333282
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698bba405fe42f110800000000000000
+      internalID: 1293182857261070486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_20
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1.3333282
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689a219ceea50cf00800000000000000
+      internalID: 1135007087719524742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_21
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 1.3333282
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea15011987be65470800000000000000
+      internalID: 8383146659459125678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_22
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 1.3333282
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3707dcf36311a0b50800000000000000
+      internalID: 6560074731914883187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_23
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 1.3333282
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc102a950b146ede0800000000000000
+      internalID: -1304282816403340851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_24
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1.3333282
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbff093b30441020800000000000000
+      internalID: 2311543131852503997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_hulk2_25
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1.3333282
+        width: 195.3
+        height: 168.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6186f225dd70d20800000000000000
+      internalID: 3244805401596139196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
