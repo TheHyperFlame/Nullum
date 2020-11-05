@@ -41,8 +41,19 @@ public class CameraControl : MonoBehaviour
             {
                 target = new Vector3(player.position.x + offset.x, player.position.y + offset.y, transform.position.z);
             }
-            Vector3 currentPosition = Vector3.Lerp(transform.position, target, slip * Time.deltaTime);
-            transform.position = currentPosition;
+            float dist = transform.position.y - player.transform.position.y;
+            Debug.Log("разница:  " + dist);
+            if (Mathf.Abs(transform.position.y - player.transform.position.y) > 1.5)
+            {
+                Vector3 currentPosition = Vector3.Lerp(transform.position, target, slip * Time.deltaTime * 4.6f);
+                transform.position = currentPosition;
+            }
+            else
+            {
+                Vector3 currentPosition = Vector3.Lerp(transform.position, target, slip * Time.deltaTime);
+                transform.position = currentPosition;
+            }
+            
         }
     }
 }

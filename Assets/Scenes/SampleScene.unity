@@ -240,7 +240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &139312017
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -300,7 +300,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139312016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.660004, y: -1.4700029, z: -2.356}
+  m_LocalPosition: {x: -33.47, y: -1.4700029, z: -2.356}
   m_LocalScale: {x: 1.6126, y: 1.6126, z: 1.6126}
   m_Children:
   - {fileID: 2024632039}
@@ -329,7 +329,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &139312020
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2461,7 +2461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1947730519
 Transform:
   m_ObjectHideFlags: 0
