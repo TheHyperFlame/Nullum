@@ -68,16 +68,22 @@ public class SGWeapon : MonoBehaviour
 
             if (Input.GetMouseButton(0) && (currentAmmo > 0) && (currentReloading == false))
             {
-                GameObject bul1 = Instantiate(ammo, shotDir.position, shotDir.rotation);
-                GameObject bul2 = Instantiate(ammo, shotDir.position, shotDir.rotation);
-                GameObject bul3 = Instantiate(ammo, shotDir.position, shotDir.rotation);
-                GameObject bul4 = Instantiate(ammo, shotDir.position, shotDir.rotation);
-                GameObject bul5 = Instantiate(ammo, shotDir.position, shotDir.rotation);
-                bul1.transform.Rotate(0f, 0f, UnityEngine.Random.Range(-aim.radius * 2.5f, aim.radius * 2.5f));
-                bul2.transform.Rotate(0f, 0f, UnityEngine.Random.Range(-aim.radius * 2.5f, aim.radius * 2.5f));
-                bul3.transform.Rotate(0f, 0f, UnityEngine.Random.Range(-aim.radius * 2.5f, aim.radius * 2.5f));
-                bul4.transform.Rotate(0f, 0f, UnityEngine.Random.Range(-aim.radius * 2.5f, aim.radius * 2.5f));
-                bul5.transform.Rotate(0f, 0f, UnityEngine.Random.Range(-aim.radius * 2.5f, aim.radius * 2.5f));
+                GameObject[] bul = new GameObject[5];
+                for (int i=0; i <5; i++)
+                {
+                    bul[i] = Instantiate(ammo, shotDir.position, shotDir.rotation);
+                    bul[i].transform.Rotate(0f, 0f, UnityEngine.Random.Range(-aim.radius * 2.5f, aim.radius * 2.5f));
+                }
+                //GameObject bul1 = Instantiate(ammo, shotDir.position, shotDir.rotation);
+                //GameObject bul2 = Instantiate(ammo, shotDir.position, shotDir.rotation);
+                //GameObject bul3 = Instantiate(ammo, shotDir.position, shotDir.rotation);
+                //GameObject bul4 = Instantiate(ammo, shotDir.position, shotDir.rotation);
+                //GameObject bul5 = Instantiate(ammo, shotDir.position, shotDir.rotation);                               засунул всё это в массив и в цикл, а то слишком холхозно (удали строки, когда увидишь сообщение)
+                //bul1.transform.Rotate(0f, 0f, UnityEngine.Random.Range(-aim.radius * 2.5f, aim.radius * 2.5f));
+                //bul2.transform.Rotate(0f, 0f, UnityEngine.Random.Range(-aim.radius * 2.5f, aim.radius * 2.5f));
+                //bul3.transform.Rotate(0f, 0f, UnityEngine.Random.Range(-aim.radius * 2.5f, aim.radius * 2.5f));
+                //bul4.transform.Rotate(0f, 0f, UnityEngine.Random.Range(-aim.radius * 2.5f, aim.radius * 2.5f));
+                //bul5.transform.Rotate(0f, 0f, UnityEngine.Random.Range(-aim.radius * 2.5f, aim.radius * 2.5f));
                 timeShot = startTime;
                 currentAmmo--;
                 if (aim.radius <= 8)

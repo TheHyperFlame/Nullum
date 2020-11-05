@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    public float slip = 1.8f;
+    public float slip = 6f;
     public Vector2 offset = new Vector2(2f, 2f);
     public bool isLeft;
     private Transform player;

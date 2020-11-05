@@ -38,4 +38,10 @@ public class Enemy : MonoBehaviour
         Instantiate(particle, transform.position, Quaternion.identity);
         Destroy(this);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("касание");
+        if (other.gameObject.GetComponent<CharacterController>())
+            Death();
+    }
 }

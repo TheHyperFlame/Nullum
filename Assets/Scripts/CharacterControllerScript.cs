@@ -33,10 +33,18 @@ public class CharacterControllerScript : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         anim.SetBool("Ground", isGrounded);
         anim.SetFloat("vSpeed", rigidBody.velocity.y);
-        if (!isGrounded)
+
+        if (!isGrounded) 
+        {
+            Debug.Log("я летаю");
+
             return;
+        }
+        else
+        {
+            Debug.Log("я стою"); 
 
-
+        }
     }
 
     void Update()

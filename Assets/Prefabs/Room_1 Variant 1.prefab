@@ -252,6 +252,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room_1 Variant 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2977638769829978288, guid: 33d0c5a4105795248aade853ed28f758,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3073573375487380142, guid: 33d0c5a4105795248aade853ed28f758,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -476,6 +481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -5.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444393698053262929, guid: 33d0c5a4105795248aade853ed28f758,
+        type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6499206126420836313, guid: 33d0c5a4105795248aade853ed28f758,
         type: 3}
