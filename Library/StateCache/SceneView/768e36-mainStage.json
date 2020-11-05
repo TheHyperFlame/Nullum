@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-25.17914390563965,"y":14.969520568847657,"z":-168.078125},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":105.84759521484375,"orthographic":true}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":55.272422790527347,"y":10.576813697814942,"z":0.3132738769054413},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":2.2347099781036379,"orthographic":true}
@@ -7,3 +8,6 @@
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-11.702195167541504,"y":-11.124733924865723,"z":-204.0011749267578},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":5.532337665557861,"orthographic":true}
 >>>>>>> eca5b9b16c475bcce049e4553327cec2079c6c22
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-4.764562129974365,"y":-3.096006393432617,"z":-236.65585327148438},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":84.56855010986328,"orthographic":true}
+>>>>>>> remotes/origin/Sergey
