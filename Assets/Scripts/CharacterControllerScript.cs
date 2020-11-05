@@ -16,7 +16,11 @@ public class CharacterControllerScript : MonoBehaviour
     public LayerMask whatIsGround;
     public float checkRadius;
     public int jumpCount;
-    public float jumpForce = 300;
+
+    [SerializeField]
+    private float jumpForce = 14;
+    [SerializeField]
+
     public int health = 100;
     public AimingCircle aim;
     void Start()

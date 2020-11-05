@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    public float slip = 6f;
+    public float slip = 1.4f;
     public Vector2 offset = new Vector2(2f, 2f);
     public bool isLeft;
     private Transform player;
@@ -24,6 +24,8 @@ public class CameraControl : MonoBehaviour
         else transform.position = new Vector3(player.position.x + offset.x, player.position.y + offset.y, transform.position.z);
     }
 
+    Vector3 target, currentPosition;
+
     private void Update()
     {
         if (player)
@@ -32,28 +34,16 @@ public class CameraControl : MonoBehaviour
             if (currentx > Lastx) isLeft = false;
             else if (currentx < Lastx) isLeft = true;
             Lastx = Mathf.RoundToInt(player.position.x);
-            Vector3 target;
-            if (isLeft)
-            {
-                target = new Vector3(player.position.x - offset.x, player.position.y + offset.y, transform.position.z);
-            }
-            else
-            {
-                target = new Vector3(player.position.x + offset.x, player.position.y + offset.y, transform.position.z);
-            }
-            float dist = transform.position.y - player.transform.position.y;
-            Debug.Log("разница:  " + dist);
-            if (Mathf.Abs(transform.position.y - player.transform.position.y) > 1.5)
-            {
-                Vector3 currentPosition = Vector3.Lerp(transform.position, target, slip * Time.deltaTime * 4.6f);
-                transform.position = currentPosition;
-            }
-            else
-            {
-                Vector3 currentPosition = Vector3.Lerp(transform.position, target, slip * Time.deltaTime);
-                transform.position = currentPosition;
-            }
             
+            target = isLeft ? new Vector3(player.position.x - offset.x, player.position.y + offset.y, transform.position.z) : new Vector3(player.position.x + offset.x, player.position.y + offset.y, transform.position.z);
+
+            float dist = transform.position.y - player.transform.position.y;
+            Vector3 currentPosition = new Vector3(0, 0, 0);
+
+            currentPosition = (Mathf.Abs(dist) > 6) ? Vector3.Lerp(transform.position, target, slip * Time.deltaTime * 4.6f): Vector3.Lerp(transform.position, target, slip * Time.deltaTime * 2);
+               
+            transform.position = currentPosition;
+
         }
     }
 }
