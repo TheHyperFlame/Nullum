@@ -38,17 +38,7 @@ public class CharacterControllerScript : MonoBehaviour
         anim.SetBool("Ground", isGrounded);
         anim.SetFloat("vSpeed", rigidBody.velocity.y);
 
-        if (!isGrounded) 
-        {
-            Debug.Log("я летаю");
-
-            return;
-        }
-        else
-        {
-            Debug.Log("я стою"); 
-
-        }
+        if (!isGrounded) return;
     }
 
     void Update()

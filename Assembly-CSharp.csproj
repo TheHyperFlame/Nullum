@@ -65,13 +65,14 @@
     <Compile Include="Assets\Idle.cs" />
     <Compile Include="Assets\Scripts\AimingCircle.cs" />
     <Compile Include="Assets\Scripts\Ammo.cs" />
-    <Compile Include="Assets\Scripts\Button.cs" />
-    <Compile Include="Assets\Scripts\CameraControl.cs" />
     <Compile Include="Assets\Scripts\CharacterControllerScript.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Room.cs" />
     <Compile Include="Assets\Scripts\RoomsPlacer.cs" />
     <Compile Include="Assets\Scripts\SGWeapon.cs" />
+    <Compile Include="Assets\Scripts\Sergey\Buttons.cs" />
+    <Compile Include="Assets\Scripts\Sergey\CameraControl.cs" />
+    <Compile Include="Assets\Scripts\Sergey\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Sergey\MapCameraC.cs" />
     <Compile Include="Assets\Scripts\TrailRender.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
     <Compile Include="Assets\Scripts\WeaponSwitch.cs" />

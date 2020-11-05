@@ -13,6 +13,11 @@ public class AimingCircle : MonoBehaviour
     public float startingRadius = 1f;
     public float distance;
     public float startingDistance;
+
+
+
+    //public CharacterControllerScript ccs;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,5 +42,32 @@ public class AimingCircle : MonoBehaviour
     {
         transform.localScale = new Vector3(radius, radius, radius);
     }
+
+
+    //void Aiming(float aim)
+    //{
+    //    if (Input.GetMouseButton(1) && (ccs.isGrounded == true))
+    //    {
+    //        if (aim.radius > 1.5f)
+    //        {
+    //            aim.radius *= 0.9f;
+    //        }
+    //        ccs.moveSpeed = 3.0f;
+    //    }
+    //}
+    //void AimingShutdown()
+    //{
+    //    if (!Input.GetMouseButton(1) || (ccs.isGrounded == false))
+    //    {
+    //        if (aim.radius < jumpDer + 3)
+    //        {
+    //            aim.radius = jumpDer + 3;
+    //        }
+    //        ccs.moveSpeed = 10.0f;
+    //
+    //    }
+    //}
+
+
 
 }

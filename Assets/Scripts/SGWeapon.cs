@@ -34,8 +34,11 @@ public class SGWeapon : MonoBehaviour
     public GameObject OverHeat_Panel;
     public AimingCircle aim;
 
+
+    //GameObject Player;
     void Start()
     {
+        //Player = GameObject.FindWithTag("Player");
         OverHeat_Panel.GetComponent<Image>().fillAmount = 0;
     }
 
@@ -223,7 +226,7 @@ public class SGWeapon : MonoBehaviour
                 }
                 ccs.moveSpeed = 3.0f;
             }
-        }
+    }
     void AimingShutdown()
     {
             if (!Input.GetMouseButton(1) || (ccs.isGrounded == false))
@@ -235,7 +238,7 @@ public class SGWeapon : MonoBehaviour
                 ccs.moveSpeed = 10.0f;
 
             }
-        }
+    }
     void heatBuild()
     {
         if(heatRate > 100)
